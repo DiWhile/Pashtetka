@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028355, g: 0.22571374, b: 0.30692255, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -412,7 +412,7 @@ Transform:
   m_GameObject: {fileID: 1004302102}
   serializedVersion: 2
   m_LocalRotation: {x: 0.3903294, y: 0, z: 0, w: 0.92067534}
-  m_LocalPosition: {x: 0, y: 7.187333, z: -6.9528594}
+  m_LocalPosition: {x: 0, y: 7.3753333, z: -6.95286}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -595,7 +595,7 @@ Transform:
   m_GameObject: {fileID: 1142041017}
   serializedVersion: 2
   m_LocalRotation: {x: 0.3903294, y: 0, z: 0, w: 0.92067534}
-  m_LocalPosition: {x: 0, y: 7.187333, z: -6.9528594}
+  m_LocalPosition: {x: 0, y: 7.3753333, z: -6.95286}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -742,7 +742,7 @@ PrefabInstance:
     - target: {fileID: 6552184841512296006, guid: 67eb2ce98a6801346a5b1414823d1221,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.188
       objectReference: {fileID: 0}
     - target: {fileID: 6552184841512296006, guid: 67eb2ce98a6801346a5b1414823d1221,
         type: 3}
@@ -787,8 +787,39 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5119866026405126268, guid: 67eb2ce98a6801346a5b1414823d1221,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7429955115391272883}
   m_SourcePrefab: {fileID: 100100000, guid: 67eb2ce98a6801346a5b1414823d1221, type: 3}
+--- !u!1 &7429955115391272882 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5119866026405126268, guid: 67eb2ce98a6801346a5b1414823d1221,
+    type: 3}
+  m_PrefabInstance: {fileID: 7429955115391272881}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &7429955115391272883
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7429955115391272882}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c3958c9ac330c3c409674b92f8cb8d33, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
