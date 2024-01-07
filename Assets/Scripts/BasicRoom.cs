@@ -6,9 +6,13 @@ public class BasicRoom : MonoBehaviour
 {
 
     public string roomName;
+    public bool roomIsActive = false;
 
+    public List<GameObject> pointsOfActivites = new List<GameObject>();
 
-
-
+    private void FixedUpdate()
+    {
+        
+    }
 
 }
