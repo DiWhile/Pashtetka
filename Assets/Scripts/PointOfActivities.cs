@@ -5,21 +5,24 @@ using UnityEngine;
 public class PointOfActivities : MonoBehaviour
 {
     public string activitiesName;
-
-
+    public bool workIsDone = false;
 
     private void OnTriggerStay(Collider other)
     {
         if (other.tag == "Worker")
         {
-            isDone();
+            workIsDone = true;
+            IsDone();
         }
     }
 
-
-    public void isDone()
+    public void IsDone()
     {
-        print("this shit is done");
+        print($"{activitiesName} isDone");
     }
 
+    public void OnDestroy()
+    {
+        Destroy(gameObject);
+    }
 }
