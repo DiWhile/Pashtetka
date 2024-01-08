@@ -6,24 +6,23 @@ public class BasicRoom : MonoBehaviour
 {
     public string roomName;
     public bool roomIsActive = false;
+
     public List<PointOfActivities> pointsOfActivities = new List<PointOfActivities>();
+ 
 
     private void FixedUpdate()
     {
-        List<PointOfActivities> pointsToRemove = new List<PointOfActivities>();
-
         foreach (var point in pointsOfActivities)
         {
-            if (point.workIsDone)
+            if (point.workIsDone == true)
             {
-                pointsToRemove.Add(point);
+                point.gameObject.SetActive(false);
             }
         }
-
-        foreach (var point in pointsToRemove)
-        {
-            point.OnDestroy();
-            pointsOfActivities.Remove(point);
-        }
     }
+
+
+   
+
+
 }
