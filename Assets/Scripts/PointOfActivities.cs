@@ -8,13 +8,19 @@ public class PointOfActivities : MonoBehaviour
     public string activitiesName;
     public bool workIsDone = false;
 
+    [SerializeField] public int money;
+    
+
     [Header("Время на задачу")]
 
     [SerializeField] private float timeToMakeJob = 5;
     [SerializeField] private Image timerImage;
 
+
     private float _timeLeft = 0f;
     private bool timerRunning = false;
+
+
 
     private IEnumerator StartTimer()
     {
@@ -42,6 +48,7 @@ public class PointOfActivities : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        
         if (other.tag == "Worker" && !timerRunning)
         {
             print("Вошёл в зону деятельности");

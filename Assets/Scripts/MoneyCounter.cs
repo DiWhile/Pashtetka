@@ -8,14 +8,12 @@ public class MoneyCounter : MonoBehaviour
 {
     [SerializeField] private int quantityMoney = 0;
     [SerializeField] private TMP_Text textInCounter;
-    private int receivedMoney = 0;
+    public int receivedMoney = 0;
     private bool isChanging = false;
+
+
     private void Update()
     {
-        if (Input.GetKey(KeyCode.G))
-        {
-            receivedMoney = 10;
-        }
         if (isChanging == false && receivedMoney != 0)
         {
             ReceivingMoney();
