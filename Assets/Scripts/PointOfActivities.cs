@@ -72,10 +72,7 @@ public class PointOfActivities : MonoBehaviour
         workIsDone = true;
     }
 
-    public void OnChanged()
-    {
-       // тут должна убираться грязь, стелится кровать и прочее
-    }
+
 
 
 

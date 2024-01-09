@@ -8,21 +8,32 @@ public class BasicRoom : MonoBehaviour
     public bool roomIsActive = false;
 
     public List<PointOfActivities> pointsOfActivities = new List<PointOfActivities>();
- 
+
+    public List<PointOfActivities> reservPointsOfActivities = new List<PointOfActivities>();
 
     private void FixedUpdate()
     {
-        foreach (var point in pointsOfActivities)
+        if (pointsOfActivities.Count != 0)
         {
-            if (point.workIsDone == true)
+            for (int i = pointsOfActivities.Count - 1; i >= 0; i--)
             {
-                point.gameObject.SetActive(false);
+                var point = pointsOfActivities[i];
+
+                if (point.workIsDone)
+                {
+                    point.gameObject.SetActive(false);
+                    reservPointsOfActivities.Add(point);
+                    pointsOfActivities.RemoveAt(i);
+                }
             }
         }
+    
+            // тут выполнить условие можно и вернуть все обьекты с резерва
+        
     }
 
 
-   
+
 
 
 }
